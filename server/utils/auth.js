@@ -17,7 +17,7 @@ export const hashPassword = (password) => {
 };
 
 export const comparePassword = (password, hashed) => {
-    return bcrypt.compare(password, hashed)
+    return bcrypt.compare(password, hashed) //true or false
 };
 
 //ใช้ bcrypt.compareSync กับ bcrypt.hashSync ดีกว่า
